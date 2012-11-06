@@ -80,9 +80,10 @@ int main(int argc, const char **argv) {
                 }
 
             }
-            cout << "====================" << endl;
+            
             gettimeofday(&t2, NULL);
             cout << "Elapsed time: " << getSeconds(t, t2) << " seconds." << endl;
+            cout << "====================" << endl;
         }
     }
     if (a == 2) {
