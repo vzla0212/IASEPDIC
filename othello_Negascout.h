@@ -107,7 +107,6 @@ int NegascoutF_TT(state_t state, int d, int alpha, int beta) {
     m = MAX(m, NegascoutG_TT(state.move(1, valid_moves[0]), d - 1, alpha, beta));
     //std::cout<<"g"<<std::endl; 
     if (m >= beta) {
-        insert_hash(state,m);
         return m;
     }
     for (int i = 1; i < valid_moves.size(); i++) {
@@ -120,11 +119,9 @@ int NegascoutF_TT(state_t state, int d, int alpha, int beta) {
             }
         }
         if (m >= beta) {
-            insert_hash(state,m);
             return m;
         }
     }
-    insert_hash(state,m);
     return m;
 
 }
@@ -152,7 +149,6 @@ int NegascoutG_TT(state_t state, int d, int alpha, int beta) {
     }
     m = MIN(m, NegascoutF_TT(state.move(0, valid_moves[0]), d - 1, alpha, beta));
     if (m <= alpha) {
-        insert_hash(state,m);
         return m;
     }
     for (int i = 1; i < valid_moves.size(); i++) {
@@ -165,10 +161,8 @@ int NegascoutG_TT(state_t state, int d, int alpha, int beta) {
             }
         }
         if (m <= alpha) {
-            insert_hash(state,m);
             return m;
         }
     }
-    insert_hash(state,m);
     return m;
 }
