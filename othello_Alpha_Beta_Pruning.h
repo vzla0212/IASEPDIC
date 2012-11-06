@@ -1,6 +1,5 @@
 int alpha_beta_pruning(state_t state, int d, int alpha, int beta, bool Player) {
     generados++;
-    bool expanded=true;
     if (state.terminal()) {
         insert_hash(state, state.value(), 0);
         return state.value();
@@ -11,6 +10,7 @@ int alpha_beta_pruning(state_t state, int d, int alpha, int beta, bool Player) {
         //gather possible moves for succersors
         for (int pos = 0; pos < DIM; ++pos) {
             if ((state.is_black_move(pos))) {
+                expandidos++;
                 existOne = true;
                 alpha = std::max(alpha, alpha_beta_pruning(state.move(1, pos), d - 1, alpha, beta, 0));
                 if (alpha >= beta) {
@@ -26,17 +26,14 @@ int alpha_beta_pruning(state_t state, int d, int alpha, int beta, bool Player) {
         //gather possible moves for succersors
         for (int pos = 0; pos < DIM; ++pos) {
             if ((state.is_white_move(pos))) {
+                expandidos++;
                 existOne = true;
                 beta = std::min(beta, alpha_beta_pruning(state.move(0, pos), d - 1, alpha, beta, 1));
                 if (alpha >= beta) {
-                   expanded=false;
                     break;
                 }
             }
         }
-        if(expanded){
-          expandidos++;
-          }
         if (!existOne) {
             beta = std::min(beta, alpha_beta_pruning(state, d - 1, alpha, beta, 1));
         }

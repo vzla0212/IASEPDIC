@@ -128,9 +128,6 @@ int Negamax_TT(state_t state, int d, int alpha, int beta, int color) {
 
     }
     for (int i = 0; i < valid_moves.size(); i++) {
-        if(i==0){
-          expandidos++;
-        }
         int val = -Negamax_TT(state.move(Player, valid_moves[i]), d - 1, -beta, -alpha, -color);
 
         if (val >= beta) {

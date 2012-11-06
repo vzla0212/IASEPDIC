@@ -85,11 +85,13 @@ int main(int argc, const char **argv) {
                 }
 
             }
-            
             gettimeofday(&t2, NULL);
-            cout << "Elapsed time: " << getSeconds(t, t2) << " seconds." << endl;
+            cout << "Parcial Elapsed time: " << getSeconds(t, t2) << " seconds." << endl;
+            cout << "Total Elapsed time: " << getSeconds(p, t2) << " seconds." << endl;
             cout << "Nodes generated: " << generados << endl;
+            cout << "Expanded nodes: " << expandidos << endl;
             generados = 0;
+            expandidos=0;
             cout << "====================" << endl;
         }
     }
@@ -114,7 +116,12 @@ int main(int argc, const char **argv) {
                 }
             }
             gettimeofday(&t2, NULL);
-            cout << "Elapsed time: " << getSeconds(t, t2) << " seconds." << endl;
+            cout << "Parcial Elapsed time: " << getSeconds(t, t2) << " seconds." << endl;
+            cout << "Total Elapsed time: " << getSeconds(p, t2) << " seconds." << endl;
+            cout << "Nodes generated: " << generados << endl;
+            cout << "Expanded nodes: " << expandidos << endl;
+            generados = 0;
+            expandidos=0;
             cout << "====================" << endl;
         }
     }
