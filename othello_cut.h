@@ -478,7 +478,7 @@ inline std::ostream& operator<<(std::ostream &os, const state_t &state) {
 struct stored_info_t {
     // [information to be stored in hash table]
     int value;
-    int option;
+    int option; //represents the option to be stored in the hash function
     /* 
     stored_info_t() {
     } // need at least one ctor without arguments
