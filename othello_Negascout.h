@@ -192,9 +192,9 @@ int NegascoutG_TT(state_t state, int d, int alpha, int beta) {
         }
     }
     if(m<=alpha){
-        insert_hash(state,m,1);
-    }else if(m>=beta){
         insert_hash(state,m,2);
+    }else if(m>=beta){
+        insert_hash(state,m,1);
     }else{
         insert_hash(state,m,0);
     }
