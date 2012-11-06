@@ -500,6 +500,7 @@ class hash_table_t : public tr1::unordered_map<state_t, stored_info_t, hash_func
 };
 
 hash_table_t dd;
+hash_table_t pp;
 
 void insert_hash(state_t state, int value, int option)
  {
@@ -507,4 +508,12 @@ void insert_hash(state_t state, int value, int option)
     info.value = value;
     info.option=option;
     dd.insert(make_pair(state, info)) ;
+ }
+
+void insert_hash_aux(state_t state, int value, int option)
+ {
+    stored_info_t info;
+    info.value = value;
+    info.option=option;
+    pp.insert(make_pair(state, info)) ;
  }
