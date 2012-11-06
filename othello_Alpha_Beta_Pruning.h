@@ -53,14 +53,10 @@ int alpha_beta_pruning_TT(state_t state, int d, int alpha, int beta, bool Player
             return getValue(it->second);
         }
         if (((it->second).option == 1) && Player) {
-            if (alpha < getValue(it->second)) {
-                alpha = getValue(it->second);
-            }
+            alpha = std::max(alpha, getValue(it->second));
         }
         if (((it->second).option == 2) && !Player) {
-            if (beta > getValue(it->second)) {
-                beta = getValue(it->second);
-            }
+            beta = std::min(beta, getValue(it->second));
         }
     }
 
