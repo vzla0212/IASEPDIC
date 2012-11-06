@@ -4,7 +4,6 @@ int alpha_beta_pruning(state_t state, int d, int alpha, int beta, bool Player) {
         return state.value();
     }
     bool existOne=false;
-    std::vector<int> valid_moves;
 
     if (Player) {
         //gather possible moves for succersors
@@ -43,7 +42,6 @@ int alpha_beta_pruning_TT(state_t state, int d, int alpha, int beta, bool Player
     
     hash_table_t::iterator it = dd.find(state);
     if (it != dd.end()) {
-        //  std::cout << "HASH SE USO"<< std::endl;
         return getValue(it->second);
     }
     
@@ -52,8 +50,8 @@ int alpha_beta_pruning_TT(state_t state, int d, int alpha, int beta, bool Player
         insert_hash(state, beta);        
         return state.value();
     }
+    
     bool existOne=false;
-    std::vector<int> valid_moves;
 
     if (Player) {
         //gather possible moves for succersors
