@@ -17,6 +17,7 @@ int NegascoutF(state_t state, int d, int alpha, int beta) {
         valid_moves.push_back(36);
     }
     m = std::max(m, NegascoutG(state.move(1, valid_moves[0]), d - 1, alpha, beta));
+    expandidos++;
     //std::cout<<"g"<<std::endl; 
     if (m >= beta) {
         return m;
@@ -57,6 +58,7 @@ int NegascoutG(state_t state, int d, int alpha, int beta) {
         valid_moves.push_back(36);
     }
     m = std::min(m, NegascoutF(state.move(0, valid_moves[0]), d - 1, alpha, beta));
+    expandidos++;
     if (m <= alpha) {
         return m;
     }
@@ -118,7 +120,7 @@ if (valid_moves.size() == 0) {
     valid_moves.push_back(36);
 }
 m = std::max(m, NegascoutG_TT(state.move(1, valid_moves[0]), d - 1, alpha, beta));
-//std::cout<<"g"<<std::endl; 
+generados++;
 if (m >= beta) {
     return m;
 }
@@ -178,6 +180,7 @@ int NegascoutG_TT(state_t state, int d, int alpha, int beta) {
         valid_moves.push_back(36);
     }
     m = std::min(m, NegascoutF_TT(state.move(0, valid_moves[0]), d - 1, alpha, beta));
+    expandidos++;
     if (m <= alpha) {
         return m;
     }

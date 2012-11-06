@@ -72,16 +72,16 @@ int main(int argc, const char **argv) {
             gettimeofday(&t, NULL);
             if (iter % 2 == 1) {
                 if (!tt) {
-                    cout << NegascoutG(Vector[iter], 60, -1000000000, 1000000000) << endl;
+                    cout << "Value of the game = "<< NegascoutG(Vector[iter], 60, -1000000000, 1000000000) << endl;
                 } else {
-                    cout << NegascoutG_TT(Vector[iter], 60, -1000000000, 1000000000) << endl;
+                    cout << "Value of the game = "<< NegascoutG_TT(Vector[iter], 60, -1000000000, 1000000000) << endl;
                 }
             }
             if (iter % 2 == 0) {
                 if (!tt) {
-                    cout << NegascoutF(Vector[iter], 60, -1000000000, 1000000000) << endl;
+                    cout << "Value of the game = "<< NegascoutF(Vector[iter], 60, -1000000000, 1000000000) << endl;
                 } else {
-                    cout << NegascoutF_TT(Vector[iter], 60, -1000000000, 1000000000) << endl;
+                    cout << "Value of the game = "<< NegascoutF_TT(Vector[iter], 60, -1000000000, 1000000000) << endl;
                 }
 
             }
@@ -133,16 +133,16 @@ int main(int argc, const char **argv) {
             gettimeofday(&t, NULL);
             if (iter % 2 == 1) {
                 if (!tt) {
-                    cout << alpha_beta_pruning(Vector[iter], 1000, -1000000000, 1000000000, 0) << endl;
+                    cout << "Value of the game = "<< alpha_beta_pruning(Vector[iter], 1000, -1000000000, 1000000000, 0) << endl;
                 } else {
-                    cout << alpha_beta_pruning_TT(Vector[iter], 1000, -1000000000, 1000000000, 0) << endl;
+                    cout << "Value of the game = "<< alpha_beta_pruning_TT(Vector[iter], 1000, -1000000000, 1000000000, 0) << endl;
                 }
             }
             if (iter % 2 == 0) {
                 if (!tt) {
-                    cout << alpha_beta_pruning(Vector[iter], 1000, -1000000000, 1000000000, 1) << endl;
+                    cout << "Value of the game = "<< alpha_beta_pruning(Vector[iter], 1000, -1000000000, 1000000000, 1) << endl;
                 }else{
-                    cout << alpha_beta_pruning_TT(Vector[iter], 1000, -1000000000, 1000000000, 1) << endl;
+                    cout << "Value of the game = "<< alpha_beta_pruning_TT(Vector[iter], 1000, -1000000000, 1000000000, 1) << endl;
                 }
             }
             gettimeofday(&t2, NULL);

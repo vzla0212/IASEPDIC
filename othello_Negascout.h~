@@ -118,7 +118,7 @@ if (valid_moves.size() == 0) {
     valid_moves.push_back(36);
 }
 m = std::max(m, NegascoutG_TT(state.move(1, valid_moves[0]), d - 1, alpha, beta));
-//std::cout<<"g"<<std::endl; 
+ 
 if (m >= beta) {
     return m;
 }
