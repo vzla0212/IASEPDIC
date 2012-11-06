@@ -5,8 +5,8 @@
 // Modified by: 
 
 #include "othello_cut.h" // won't work correctly until .h is fixed!
-#include "othello_Negamax.h"
-#include "othello_Negascout.h"
+//#include "othello_Negamax.h"
+//#include "othello_Negascout.h"
 #include "othello_Alpha_Beta_Pruning.h"
 //#include "Alter_Negascout.h"
 
@@ -17,7 +17,8 @@
 
 using namespace std;
 
-struct timeval t, t2;
+struct timeval t, t2, p;
+
 float microsegundos;
 
 double getSeconds(timeval t, timeval t2) {
@@ -58,7 +59,8 @@ int main(int argc, const char **argv) {
     int a;
     cout << "Ingrese 1 Negascout, 2 Negamax, 3 Alpha Beta Pruning ? eleccion= ";
     cin >> a;
-    if (a == 1) {
+    gettimeofday(&p, NULL);
+/*    if (a == 1) {
         //NEGASCOUT
         for (int iter = 32; iter >= 0; iter--) {
             cout << "Board after " << iter << " plies " << endl;
@@ -108,7 +110,7 @@ int main(int argc, const char **argv) {
             cout << "Elapsed time: " << getSeconds(t, t2) << " seconds." << endl;
             cout << "====================" << endl;
         }
-    }
+    }*/
     if (a == 3) {
         //ALPHA BETA PRUNING    
         for (int iter = 32; iter >= 0; iter--) {
@@ -130,7 +132,9 @@ int main(int argc, const char **argv) {
                 }
             }
             gettimeofday(&t2, NULL);
-            cout << "Elapsed time: " << getSeconds(t, t2) << " seconds." << endl;
+            cout << "Parcial Elapsed time: " << getSeconds(t, t2) << " seconds." << endl;
+            //gettimeofday(&t2, NULL);
+            cout << "Total Elapsed time: " << getSeconds(p, t2) << " seconds." << endl;
             cout << "====================" << endl;
         }
     }
