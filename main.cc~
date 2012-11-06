@@ -140,6 +140,7 @@ int main(int argc, const char **argv) {
             }
             gettimeofday(&t2, NULL);
             cout << "Parcial Elapsed time: " << getSeconds(t, t2) << " seconds." << endl;
+            //gettimeofday(&t2, NULL);
             cout << "Total Elapsed time: " << getSeconds(p, t2) << " seconds." << endl;
             cout << "Nodes generated: " << generados << endl;
             cout << "Expanded nodes: " << expandidos << endl;

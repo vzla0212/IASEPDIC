@@ -34,9 +34,7 @@ int alpha_beta_pruning(state_t state, int d, int alpha, int beta, bool Player) {
                 }
             }
         }
-        if(expanded){
-          expandidos++;
-          }
+        expanded?expandidos++:;
         if (!existOne) {
             beta = std::min(beta, alpha_beta_pruning(state, d - 1, alpha, beta, 1));
         }
