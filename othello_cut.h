@@ -510,5 +510,3 @@ void insert_hash(state_t state, int value, int option)
     info.option=option;
     dd.insert(make_pair(state, info)) ;
  }
-
-

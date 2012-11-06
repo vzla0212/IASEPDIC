@@ -1,8 +1,7 @@
-
-
 int NegascoutG(state_t state, int d, int alpha, int beta); //Para poder realizar la doble llamada recursiva
 
-int NegascoutF(state_t state, int d, int alpha, int beta) {
+int NegascoutF(state_t state, int d, int alpha, int beta)
+{
     if (d == 0 || state.terminal()) {
         return state.value();
     }
@@ -90,6 +89,7 @@ int NegascoutG_TT(state_t state, int d, int alpha, int beta); //Para poder reali
 
 int NegascoutF_TT(state_t state, int d, int alpha, int beta) {
     if (d == 0 || state.terminal()) {
+        
         return state.value();
     }
 

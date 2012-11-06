@@ -8,7 +8,6 @@
 #include "othello_Negamax.h"
 #include "othello_Negascout.h"
 #include "othello_Alpha_Beta_Pruning.h"
-//#include "Alter_Negascout.h"
 
 #include <iostream>
 #include <string>
