@@ -502,6 +502,7 @@ class hash_table_t : public tr1::unordered_map<state_t, stored_info_t, hash_func
 hash_table_t dd;
 
 
+
 void insert_hash(state_t state, int value, int option)
  {
     stored_info_t info;

@@ -51,6 +51,13 @@ int NegascoutG(state_t state, int d, int alpha, int beta) {
             valid_moves.push_back(pos);
         }
     }
+    
+    
+    
+    
+    
+    
+    
     if (valid_moves.size() == 0) {
         valid_moves.push_back(36);
     }

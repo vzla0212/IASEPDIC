@@ -5,8 +5,8 @@
 // Modified by: 
 
 #include "othello_cut.h" // won't work correctly until .h is fixed!
-//#include "othello_Negamax.h"
-//#include "othello_Negascout.h"
+#include "othello_Negamax.h"
+#include "othello_Negascout.h"
 #include "othello_Alpha_Beta_Pruning.h"
 //#include "Alter_Negascout.h"
 
@@ -60,7 +60,7 @@ int main(int argc, const char **argv) {
     cout << "Ingrese 1 Negascout, 2 Negamax, 3 Alpha Beta Pruning ? eleccion= ";
     cin >> a;
     gettimeofday(&p, NULL);
-/*    if (a == 1) {
+    if (a == 1) {
         //NEGASCOUT
         for (int iter = 32; iter >= 0; iter--) {
             cout << "Board after " << iter << " plies " << endl;
@@ -110,7 +110,7 @@ int main(int argc, const char **argv) {
             cout << "Elapsed time: " << getSeconds(t, t2) << " seconds." << endl;
             cout << "====================" << endl;
         }
-    }*/
+    }
     if (a == 3) {
         //ALPHA BETA PRUNING    
         for (int iter = 32; iter >= 0; iter--) {

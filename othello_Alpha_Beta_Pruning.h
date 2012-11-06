@@ -1,6 +1,8 @@
+
+
 int alpha_beta_pruning(state_t state, int d, int alpha, int beta, bool Player) {
     if (state.terminal()) {
-        //std::cout<<"hola1";
+        insert_hash(state, state.value(), 0);
         return state.value();
     }
     bool existOne = false;

@@ -1,0 +1,10 @@
+all: hello
+
+hello: main.o
+	g++ main.o -o hello
+
+main.o: main.cc
+	g++ -c main.cc 
+	
+clean:
+	rm -rf *o hello
