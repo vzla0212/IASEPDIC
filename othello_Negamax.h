@@ -91,13 +91,12 @@ int Negamax_TT(state_t state, int d, int alpha, int beta, int color) {
         int val = -Negamax_TT(state.move(Player, valid_moves[i]), d - 1, -beta, -alpha, -color);
         
         if (val >= beta) {
-            insert_hash(state,val);
+
             return val;
         }
         if (val >= alpha) {
             alpha = val;
         }
     }
-    insert_hash(state,alpha);
     return alpha;
 }
