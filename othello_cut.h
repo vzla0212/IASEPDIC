@@ -478,8 +478,7 @@ inline std::ostream& operator<<(std::ostream &os, const state_t &state) {
 struct stored_info_t {
     // [information to be stored in hash table]
     int value;
-    int beta;
-    int alpha;
+    int option;
     /* 
     stored_info_t() {
     } // need at least one ctor without arguments
@@ -502,9 +501,10 @@ class hash_table_t : public tr1::unordered_map<state_t, stored_info_t, hash_func
 
 hash_table_t dd;
 
-void insert_hash(state_t state, int value)
+void insert_hash(state_t state, int value, int option)
  {
     stored_info_t info;
     info.value = value;
+    info.option=option;
     dd.insert(make_pair(state, info)) ;
  }
