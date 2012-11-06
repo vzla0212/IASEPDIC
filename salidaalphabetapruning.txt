@@ -1,0 +1,212 @@
+Want to use TRANSPOSITION TABLES 0=NO 1=YES? 1
+using tt
+Principal variation:
+Value of the game = -4
+#bits per state = 96
+Ingrese 1 Negascout, 2 Negamax, 3 Alpha Beta Pruning ? eleccion= 3
+Board after 32 plies 
+-4
+Parcial Elapsed time: 7e-06 seconds.
+Total Elapsed time: 2.3e-05 seconds.
+====================
+Board after 31 plies 
+-4
+Parcial Elapsed time: 2.9e-05 seconds.
+Total Elapsed time: 0.000122 seconds.
+====================
+Board after 30 plies 
+-4
+Parcial Elapsed time: 1.8e-05 seconds.
+Total Elapsed time: 0.000158 seconds.
+====================
+Board after 29 plies 
+-4
+Parcial Elapsed time: 5e-05 seconds.
+Total Elapsed time: 0.000225 seconds.
+====================
+Board after 28 plies 
+-4
+Parcial Elapsed time: 2e-05 seconds.
+Total Elapsed time: 0.000261 seconds.
+====================
+Board after 27 plies 
+-4
+Parcial Elapsed time: 5.9e-05 seconds.
+Total Elapsed time: 0.000338 seconds.
+====================
+Board after 26 plies 
+-4
+Parcial Elapsed time: 0.000219 seconds.
+Total Elapsed time: 0.000574 seconds.
+====================
+Board after 25 plies 
+-4
+Parcial Elapsed time: 0.000609 seconds.
+Total Elapsed time: 0.0012 seconds.
+====================
+Board after 24 plies 
+-4
+Parcial Elapsed time: 0.002492 seconds.
+Total Elapsed time: 0.00371 seconds.
+====================
+Board after 23 plies 
+-4
+Parcial Elapsed time: 0.001776 seconds.
+Total Elapsed time: 0.005508 seconds.
+====================
+Board after 22 plies 
+-4
+Parcial Elapsed time: 0.0071 seconds.
+Total Elapsed time: 0.012626 seconds.
+====================
+Board after 21 plies 
+-4
+Parcial Elapsed time: 0.007425 seconds.
+Total Elapsed time: 0.020082 seconds.
+====================
+Board after 20 plies 
+-4
+Parcial Elapsed time: 0.105354 seconds.
+Total Elapsed time: 0.125465 seconds.
+====================
+Board after 19 plies 
+-4
+Parcial Elapsed time: 0.122647 seconds.
+Total Elapsed time: 0.248151 seconds.
+====================
+Board after 18 plies 
+-4
+Parcial Elapsed time: 0.21335 seconds.
+Total Elapsed time: 0.461531 seconds.
+====================
+Board after 17 plies 
+-4
+Parcial Elapsed time: 1.31348 seconds.
+Total Elapsed time: 1.77506 seconds.
+====================
+Board after 16 plies 
+-4
+Parcial Elapsed time: 1.11557 seconds.
+Total Elapsed time: 2.89067 seconds.
+====================
+Board after 15 plies 
+-4
+Parcial Elapsed time: 27.6939 seconds.
+Total Elapsed time: 30.5846 seconds.
+====================
+Board after 14 plies 
+-4
+Parcial Elapsed time: 40.7549 seconds.
+Total Elapsed time: 71.3395 seconds.
+====================
+Board after 13 plies 
+^C
+RUN FAILED (exit value 1, total time: 1m 22s)
+
+
+
+
+Want to use TRANSPOSITION TABLES 0=NO 1=YES? 0
+NOT using tt
+Principal variation:
+Value of the game = -4
+#bits per state = 96
+Ingrese 1 Negascout, 2 Negamax, 3 Alpha Beta Pruning ? eleccion= 3
+Board after 32 plies 
+-4
+Parcial Elapsed time: 7e-06 seconds.
+Total Elapsed time: 2.7e-05 seconds.
+====================
+Board after 31 plies 
+-4
+Parcial Elapsed time: 2.2e-05 seconds.
+Total Elapsed time: 0.000117 seconds.
+====================
+Board after 30 plies 
+-4
+Parcial Elapsed time: 1.7e-05 seconds.
+Total Elapsed time: 0.000151 seconds.
+====================
+Board after 29 plies 
+-4
+Parcial Elapsed time: 3.8e-05 seconds.
+Total Elapsed time: 0.000206 seconds.
+====================
+Board after 28 plies 
+-4
+Parcial Elapsed time: 3.9e-05 seconds.
+Total Elapsed time: 0.000262 seconds.
+====================
+Board after 27 plies 
+-4
+Parcial Elapsed time: 7.6e-05 seconds.
+Total Elapsed time: 0.000354 seconds.
+====================
+Board after 26 plies 
+-4
+Parcial Elapsed time: 0.000232 seconds.
+Total Elapsed time: 0.000602 seconds.
+====================
+Board after 25 plies 
+-4
+Parcial Elapsed time: 0.000661 seconds.
+Total Elapsed time: 0.00128 seconds.
+====================
+Board after 24 plies 
+-4
+Parcial Elapsed time: 0.002818 seconds.
+Total Elapsed time: 0.004114 seconds.
+====================
+Board after 23 plies 
+-4
+Parcial Elapsed time: 0.00428 seconds.
+Total Elapsed time: 0.008412 seconds.
+====================
+Board after 22 plies 
+-4
+Parcial Elapsed time: 0.010309 seconds.
+Total Elapsed time: 0.018741 seconds.
+====================
+Board after 21 plies 
+-4
+Parcial Elapsed time: 0.013495 seconds.
+Total Elapsed time: 0.032267 seconds.
+====================
+Board after 20 plies 
+-4
+Parcial Elapsed time: 0.137798 seconds.
+Total Elapsed time: 0.170108 seconds.
+====================
+Board after 19 plies 
+-4
+Parcial Elapsed time: 0.179592 seconds.
+Total Elapsed time: 0.349742 seconds.
+====================
+Board after 18 plies 
+-4
+Parcial Elapsed time: 0.3748 seconds.
+Total Elapsed time: 0.724583 seconds.
+====================
+Board after 17 plies 
+-4
+Parcial Elapsed time: 1.78561 seconds.
+Total Elapsed time: 2.51022 seconds.
+====================
+Board after 16 plies 
+-4
+Parcial Elapsed time: 2.89566 seconds.
+Total Elapsed time: 5.40592 seconds.
+====================
+Board after 15 plies 
+-4
+Parcial Elapsed time: 40.3932 seconds.
+Total Elapsed time: 45.7991 seconds.
+====================
+Board after 14 plies 
+-4
+Parcial Elapsed time: 60.5206 seconds.
+Total Elapsed time: 106.32 seconds.
+====================
+Board after 13 plies 
+
+
